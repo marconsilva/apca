@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AzurePriceCalculatorAgent.ApiService\AzurePriceCalculatorAgent.ApiService.csproj" />
     <ProjectReference Include="..\AzurePriceCalculatorAgent.Web\AzurePriceCalculatorAgent.Web.csproj" />
+    <ProjectReference Include="..\AzurePriceCalculatorAgent.McpServer\AzurePriceCalculatorAgent.McpServer.csproj" />
   </ItemGroup>
 
 </Project>
