@@ -1,0 +1,16 @@
+name: azure-price-calculator-agent
+metadata:
+  template: azd-init@1.9.5
+services:
+  web:
+    project: ./AzurePriceCalculatorAgent.Web
+    language: dotnet
+    host: containerapp
+  mcpserver:
+    project: ./AzurePriceCalculatorAgent.McpServer
+    language: dotnet
+    host: containerapp
+  apiservice:
+    project: ./AzurePriceCalculatorAgent.ApiService
+    language: dotnet
+    host: containerapp
