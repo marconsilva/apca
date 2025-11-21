@@ -19,6 +19,9 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
         client.BaseAddress = new("https+http://apiservice");
     });
 
+// Add HttpClient for general use (for MCP Server and other services)
+builder.Services.AddHttpClient();
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
